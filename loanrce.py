@@ -7,7 +7,7 @@ married=st.number_input('Enter martial status married:0 ,unmarried:1')
 income=st.number_input('Enter applicant income in thousands')
 la=st.number_input('Enter loan amount income in thousands')
 if st.button('predict Approval'):
-    predication=model.predict([[gender,married,income,la]])
+    prediction=model.predict([[gender,married,income,la]])
     if prediction=='Y':
         st.text('loan approved')
     else:
